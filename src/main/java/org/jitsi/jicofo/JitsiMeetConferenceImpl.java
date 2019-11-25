@@ -1357,6 +1357,7 @@ public class JitsiMeetConferenceImpl
     {
         for (Participant participant : participants)
         {
+        	System.out.println("Jid: "+participant.getChatMember().getOccupantJid()+"-"+jingleSession.getAddress());
             if (participant.getChatMember().getOccupantJid().equals(
                     jingleSession.getAddress()))
             {
