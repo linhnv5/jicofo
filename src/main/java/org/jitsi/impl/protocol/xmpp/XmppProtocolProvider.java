@@ -45,9 +45,7 @@ import org.jxmpp.jid.impl.*;
 import org.jxmpp.jid.parts.*;
 import org.jxmpp.stringprep.*;
 
-import javax.net.ssl.*;
 import java.io.*;
-import java.security.cert.*;
 import java.util.*;
 import java.util.concurrent.*;
 

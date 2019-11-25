@@ -26,7 +26,6 @@ import org.jitsi.jicofo.discovery.*;
 import org.jitsi.jicofo.util.*;
 import org.jitsi.protocol.xmpp.*;
 import org.jitsi.protocol.xmpp.util.*;
-import org.jitsi.utils.*;
 import org.jitsi.utils.logging.*;
 import org.jxmpp.jid.*;
 
@@ -97,8 +96,7 @@ public class ParticipantChannelAllocator extends AbstractChannelAllocator
 
         boolean disableIce = !participant.hasIceSupport();
         boolean useDtls = participant.hasDtlsSupport();
-        boolean useRtx
-            = config.isRtxEnabled() && participant.hasRtxSupport();
+        boolean useRtx = config.isRtxEnabled() && participant.hasRtxSupport();
         boolean enableRemb = config.isRembEnabled();
         boolean enableTcc = config.isTccEnabled();
 

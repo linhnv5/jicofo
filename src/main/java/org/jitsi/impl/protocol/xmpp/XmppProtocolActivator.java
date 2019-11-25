@@ -47,6 +47,9 @@ public class XmppProtocolActivator
 
     static BundleContext bundleContext;
 
+    public XmppProtocolActivator(int a) {
+	}
+    
     /**
      * Registers PacketExtension providers used by Jicofo
      */

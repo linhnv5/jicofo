@@ -141,6 +141,7 @@ public abstract class AbstractOperationSetJingle
 
         sessions.put(sid, session);
 
+        System.out.println(inviteIQ.toXML());
         IQ reply = getConnection().sendPacketAndGetReply(inviteIQ);
 
         return wasInviteAccepted(session, reply);
